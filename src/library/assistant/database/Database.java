@@ -45,6 +45,7 @@ public class Database {
         try {
            Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
+            System.out.println("Cannot connected to database");
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
         }
         
